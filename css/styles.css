@@ -10,6 +10,7 @@
   --span-text-color: #2e2f42;
   --address-text-color: #434455;
   --footer-text-color: #f4f4fd;
+  --standart-border-button: #e7e9fc;
 }
 
 body {
@@ -209,9 +210,7 @@ img {
   gap: 24px;
 }
 
-.three-list-link {}
-
-.three-img {
+.three-list-link {
   width: calc((100% - 48px) / 3);
 }
 
@@ -300,9 +299,22 @@ img {
   margin-bottom: 16px;
 }
 
-/*-----------PORTFOLIO----------*/
+/*-----------PORTFOLIO-main---------*/
+
+.list-butt {
+  padding: 96px 0 120px 0;
+}
+
+.potfolio-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
 
 .button-list {
+  padding: 12px 24px;
+  border: 1px solid var(--standart-border-button);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -310,13 +322,32 @@ img {
   letter-spacing: 0.04em;
   color: var(--logo-text-color);
   background-color: var(--footer-text-color);
-  cursor: pointer;
+  border-radius: 4px;
 }
 
 .button-list:hover,
 .button-list:focus {
+  cursor: pointer;
+  border: 1px solid transparent;
   color: #ffffff;
   background-color: #404bbf;
+}
+
+.port-img-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.port-list-one {
+  width: calc((100% - 48px) / 3);
+}
+
+.div-text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .title-portfolio {
@@ -325,6 +356,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-accent-color);
+  margin-bottom: 8px;
 }
 
 .portfolio-p {
